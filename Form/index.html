@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsForm_Task</title>
+   
+    <!-- Bootstrap 4.5.2 CSS -->
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'
+        integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous' />
+    <!-- FontAwesome CSS -->
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css' />
+
+    <link href="/styles.css" rel="stylesheet">
+</head>
+<body>
+    <section class="header" id="header">
+        <div class="container">
+            <div class="logo-container">
+                <a class="logo-link" href="/">
+                    <img class="logo" src="/assets/IMG/logo-dark.png" alt="Logo" />
+                </a>
+            </div>
+            <ul class="nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-haspopup="true"
+                        aria-expanded="false">
+                        English
+                    </a>
+                    <div class="dropdown-menu py-3" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/">English</a>
+                        <a class="dropdown-item" href="/pt-br/">Português</a>
+                        <a class="dropdown-item" href="/es/">Español</a>
+                        <a class="dropdown-item" href="/id/">Indonesian</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="/demo">Try Demo</a></li>
+                <li class="nav-item"><a class="nav-link" href="/pricing">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="/#templates">Templates</a></li>
+                <li class="nav-item"><a class="btn login-btn" href="#">Login</a></li>
+            </ul>
+        </div>
+        <div class="header-mobile">
+            <nav class="mobile-nav">
+                <div class="nav-content">
+                    <ul>
+                        <li class="nav-right-logo">
+                            <a href="index.html"><img src="/assets/IMG/logo.png" alt="Logo" /></a>
+                        </li>
+                        <li><a class="nav-link" href="/demo">Try Demo</a></li>
+                        <li><a class="nav-link" href="/pricing">Pricing</a></li>
+                        <li><a class="nav-link" href="/#templates">Templates</a></li>
+                        <li class="login-button"><a class="btn login-btn" href="#">Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <button class="nav-menu-toggle" type="submit"></button>
+        </div>
+    </section>
+    <header>
+            <div class="container px-xl-0 relative text-center text-md-left">
+                <div class="row justify-content-between">
+                    <div class="col-md-10 col-xl-6 pb-165 inner hero-wrapper">
+                        <h1 class="hero-text" data-aos="fade-down" data-aos-delay="0">
+                            Get<br>
+                            <span class="typing-text"></span><br>
+                            on WhatsApp.
+                        </h1>
+                    <div class="text-msg">
+                        Build forms without code &amp; get the data directly from the customer&#x27;s WhatsApp number ⚡️
+                    </div>
+                    
+                    </div>
+                    <div class="col-xl-6 d-none d-md-block img_holder" data-aos="fade-down" data-aos-delay="750">
+                        <div class="h-hero relative overflow-hidden">
+                            <img src="/assets/IMG/whatsapphero.png" alt="" class="h-hero">
+                    
+                        </div>
+                    </div>
+                    
+                    </div>
+                    </div>
+ <div class="login-form">
+    <form id="signup-form" class="d-flex" onsubmit="processSignup(event, 'en')">
+        <div class="form-group">
+            <select id="country-code" name="country-code" class="country-code">
+                
+                <option value="+1">+1 (USA)</option>
+                <option value="+44">+44 (UK)</option>
+                <option value="+91">+91 (India)</option>
+                
+            </select>
+            <input id="phone" type="tel" name="phone" class="f-20 w-full" placeholder="Enter your phone number" />
+           
+            <button type="submit" class="action-button">Login with WhatsApp</button>
+            
+        
+        </div>
+        
+    </form>
+
+    <div class="row mt-10 px-15 hide-on-token-screen">
+        <div class="col px-2">
+            <hr>
+        </div>
+        <div class="col-auto  f-16 medium color-heading px-1" style="line-height:30px">or
+        </div>
+        <div class="col px-2">
+            <hr>
+        </div>
+    </div>
+
+    <button onclick="return signupClick(event, 'en','google')" class="mt-10 w-full justify-content-center align-items-center f-18 bg-green medium google-signup-button">
+        <i class="fab fa-google f-20" aria-hidden="true"></i>
+        Login with Google
+    </button>
+
+    <div class="credits-msg">
+        <p>No credit card required. No coding required.</p>
+    </div>
+</div>
+
+</header>
+<section class="application_5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="section-heading">How WhatsApp Form works</h3>
+                <div class="how-step">
+                    <h1 class="step-number">01</h1>
+                    <div class="step-description">You create the form & share it with customers</div>
+                </div>
+                <div class="how-step">
+                    <h1 class="step-number">02</h1>
+                    <div class="step-description">Customer fills in the data and clicks on Submit</div>
+                </div>
+                <div class="how-step">
+                    <h1 class="step-number">03</h1>
+                    <div class="step-description">You get the data in WhatsApp from customer's number</div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="/assets/IMG/chatbot.png" alt="Illustration" class="illustration">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</body>
+<script src="Script.js"></script>
+</html>
